@@ -1,0 +1,169 @@
+@import "_mixins.less";
+
+/* =============================================================================
+   MAIN LAYOUT
+   ========================================================================== */
+.wrapper {
+  margin: 0 auto;
+  width:960px;
+  position:relative;
+}
+.content {padding: 50px 0;}
+.content section {padding-top: 50px;}
+
+/* =============================================================================
+   BASIC STYLES
+   ========================================================================== */
+h2, h3, h4 {
+  font-size: 5em;
+  font-weight: normal;
+  margin-bottom:.4em;
+  letter-spacing: -.02em;
+}
+h3 {font-size: 4em;}
+h4 {font-size:3em;}
+p {
+  font-size:1.6em;
+  line-height:1.6em;
+  margin-bottom: 1.4em;
+  text-align: justify;
+}
+.photo {
+  max-width:100%;
+  position:relative;
+  top:-1px;
+}
+
+/* =============================================================================
+   NAVIGATION
+   ========================================================================== */
+nav {
+  padding:15px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.nav-item {
+  display: inline-block;
+  margin-right:15px;
+}
+.nav-link {font-size: 1.4em;}
+
+/* =============================================================================
+   HEADER
+   ========================================================================== */
+.header {
+  padding: 100px 0 100px;
+  text-align:center;
+}
+.social-media-follow {
+  padding: 20px 50px 0px 50px;
+  text-align: right;
+}
+.fb-follow {
+  padding: 5px 0;
+}
+.logo-name {
+  margin-bottom: 0;
+  font-size: 8em;
+  letter-spacing: -.04em;
+}
+.tagline {
+  margin:10px 0px 40px 0px;
+  font-size: 2.5em;
+  letter-spacing: -.02em;
+}
+.schedule-call-action {
+  text-align:center;
+  padding: 30px 0 30px;
+}
+.call-action-area .price {
+  font-size:4em;
+  vertical-align: center;
+  margin-right:20px;
+}
+.call-action-area .call-action-link, .btn {
+  position:relative;
+  top:-5px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size:2em;
+  line-height:1em;
+  vertical-align: center;
+  letter-spacing: -.02em;
+  .transition(all 0.3s ease-out);
+}
+.call-action-area .call-action-link:hover, .call-action-area .call-action-link:focus, .btn:hover, .btn:focus {top:0;}
+
+/* =============================================================================
+   ABOUT
+   ========================================================================== */
+.about {
+  padding:19px;
+  margin: 0 -20px 0;
+}
+.quote {
+  font-family: serif;
+  font-style: italic;
+  font-size:2em;
+  width: 70%;
+  margin-left: 150px; 
+  margin-right: 150px; 
+  align: center;
+}
+.topicos{
+  text-align: center; 
+  img {
+    width: 70%;
+  }
+}
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width : 1024px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 20px;
+    .box-sizing(border-box);
+  }
+  .about {margin: 0;}
+}
+
+@media only screen and (max-width : 480px) {
+  /* nav */
+  nav {display: none;}
+  .header {padding:20px 0;}
+  .logo-name {font-size: 4em;}
+  .tagline {
+    margin-bottom:15px;
+    font-size: 1.4em;
+  }
+  .call-action-area .price {
+    font-size:2em;
+    margin: 0 0 15px;
+    display: block;
+  }
+  .call-action-area .call-action-link, .btn {top:0;}
+
+  h2, h3, h4 {font-size: 3em;}
+  h3 {font-size: 2em;}
+  h4 {font-size:1.8em;}
+  p {font-size:1.4em;}
+
+  /* content */
+  .content {padding: 0;}
+  .content section {padding-top: 30px;}
+}
+
+@media only screen and (max-width : 321px) {
+  .logo-name {
+    font-size: 4em;
+    margin-bottom:.4em;
+  }
+  .schedule-tbl .schedule-description {display: none;}
+  .schedule-tbl .schedule-slot {width: auto;}
+}

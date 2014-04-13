@@ -1,4 +1,16 @@
 sips_violecia_mulheres
 ======================
 
-SIPS data violência contra as mulheres
+
+
+Install all dependencies:
+
+    ```sh
+    $ npm install
+    ```
+
+5. And finally run:
+
+    ```sh
+    $ npm run-script watch
+    ```

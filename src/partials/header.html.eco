@@ -1,0 +1,9 @@
+<!-- HEADER -->
+<header class="header">
+  <div class="wrapper">
+    <h1 class="logo-name">
+      <a class="logo-link" href="#" title="<%= @title %>" itemprop="name"><%= @title %></a>
+    </h1>
+  </div>
+</header>
+<!--  / HEADER -->

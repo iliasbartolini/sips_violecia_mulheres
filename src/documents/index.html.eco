@@ -1,0 +1,8 @@
+---
+title: "Title"
+layout: "default"
+isPage: false
+---
+<h2>Lorem Ipsum</h2>
+
+<p>Lorem Ipsum</p>
